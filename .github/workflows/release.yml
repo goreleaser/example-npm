@@ -22,7 +22,7 @@ jobs:
           npm config set '//registry.npmjs.org/:_authToken'=${{ secrets.NPM_TOKEN }}
       - uses: goreleaser/goreleaser-action@v6
         with:
-          distribution: pro
+          distribution: goreleaser-pro
           version: "~> v2"
           args: release --clean
         env:
