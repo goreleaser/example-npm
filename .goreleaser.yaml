@@ -23,6 +23,7 @@ npms:
     homepage: https://goreleaser.com
     license: MIT
     author: "Carlos Alexandro Becker <carlos@becker.software>"
+    access: public
     keywords:
       - goreleaser
       - example
