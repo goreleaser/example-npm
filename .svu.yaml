@@ -1,0 +1,6 @@
+# svu configuration.
+#
+# https://github.com/caarlos0/svu
+verbose: true
+always: true
+v0: true
