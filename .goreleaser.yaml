@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://goreleaser.com/static/schema-pro.json
+# vim: set ts=2 sw=2 tw=0 fo=jcroql
+version: 2
+pro: true
+
+project_name: example
+
+builds:
+  - env: [CGO_ENABLED=0]
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+
+npms:
+  - name: "@goreleaser/example"
+    repository: https://github.com/goreleaser/example-npm
+    bugs: https://github.com/goreleaser/example-npm/issues
+    description: Example NPM publish pipeline
+    homepage: https://goreleaser.com
+    license: MIT
+    author: "Carlos Alexandro Becker <carlos@becker.software>"
+    keywords:
+      - goreleaser
+      - example
