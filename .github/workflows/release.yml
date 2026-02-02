@@ -20,6 +20,7 @@ jobs:
           go-version: stable
       - uses: actions/setup-node@v4
         with:
+          node-version: "24"
           registry-url: "https://registry.npmjs.org"
       - uses: goreleaser/goreleaser-action@v6
         with:
